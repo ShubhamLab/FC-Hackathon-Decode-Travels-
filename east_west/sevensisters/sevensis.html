@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+		
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script language="javascript" src="calendar.js"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+	<!------------------------------------------------- navbar starts -------------------------------------------------------->
+	
+	
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top pt-1 pb-1 py-1">
+	  <!--<a class="navbar-brand" href="C:\xampp\htdocs\hack\main.html"><img src="looo.jpeg"  width="176" height="50"><b></b></a>-->
+	  <!--<a class="navbar-brand"><p style="color:#FFD700;">D<p style="color:white;"> E C O D E </p></p></a>-->
+	  
+	 <a href="main.html"> <p style="margin-left:20px;"><h3><span style="color:#FFD700">D</span>
+	  <b><span style="color:white">E</span>
+	  <span style="color:white">C</span>
+	  <span style="color:white">O</span>
+	  <span style="color:white">D</span>
+	  <span style="color:white">E</span></b></h3></p>
+	  
+	  <p style="margin-left:100px;"><h3><span style="color:#FFD700">T</span>
+	  <b><span style="color:white">R</span>
+	  <span style="color:white">A</span>
+	  <span style="color:white">V</span>
+	  <span style="color:white">E</span>
+	  <span style="color:white">L</span>
+	  <span style="color:white">S</span></b></h3></p></a>
+	  
+	  
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  
+	  
+<ul class="menus cf">
+	<li>
+		<a href="C:\xampp\htdocs\hack\main.html">Home <span class="sr-only">(current)</span></a>
+	</li>
+	<li>
+		<a href="">Select Trip Type</a>
+			<ul class="submenus">
+				<li><a href="customize.html">Customize</a></li>
+				<li><a href="east_west/box.html">Packages</a></li>
+			
+			</ul>			
+	</li>
+  
+	
+	<li>
+		<a href="services.html" href="services.html">  Services</a>	
+	</li>
+	<li>
+		<a href="#reviews">  Reviews</a>	
+	</li>
+	<li>
+		<a href="gallery.html">  Gallery</a>
+	</li>
+	<li>
+		<a href="tel:9373321616">  Call Us</a>	
+	</li>
+	<li>
+		<a href="register.html"><img src = "ava.png" width="19" height="19"></a>
+	</li>
+	
+</ul>
+
+</nav>
+
+<style>
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menus,
+.submenus {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main level */
+.menus {			
+  margin: 15px auto;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menus > li {
+  background: #34495e;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menus a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}		
+
+.menus li:hover {
+  background: #e74c3c;
+}		
+
+.menus > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenus {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenus li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenus > li > a {
+  padding: 1em 2em;			
+}
+
+.submenus > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenus > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenus > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenus > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenus > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenus > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenus > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenus,
+.submenus li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenus li {
+  transition: .2s ease transform;
+}
+
+.menus > li:hover .submenus,
+.menus > li:hover .submenus li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menus > li:hover .submenus li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menus > li:hover .submenus li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+
+</style>	
+	
+	
+   
+  <br><br><br><br><br>
+
+
+
+
+<div calss = "mydiv">
+<h3>Seven Sisters ( 1 April - 18 April 2022 )</h3>
+<div class="container">
+      <legend>  <br><br><br><br><br>
+        <p class="day">DAY 1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="agartaladp.jpg" height="350" width="350" align="right">
+      </legend>
+
+<p class="lead"> Agartala</p>
+<strong><i>
+          <p>Agartala</p>
+        </i>
+      </strong>
+
+    <p>Arrive At Agartala Airport, You Will Be Received By Our Professional Representative
+	, & Proceed To The Hotel. Afternoon Visit Ujayanta Palace, Craft Centre, Emporium.
+	   Evening Visit Agartala Bazaar. Overnight Stay At Agartala.
+       Meals & Drinks : Lunch & Dinner</p>
+
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbspHotel Sonar Tori</h3>
+	  <button type="button" class="btn btn-outline-primary"><a href = "hotelsonartori.html">Check hotel photos</a></button>
+    		  <br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+<!--------------------          --------------------------->
+
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="agartaladp.jpg" height="350" width="350" align="right">
+      </legend>
+
+<p class="lead"> Agartala</p>
+<strong><i>
+          <p>Agartala</p>
+        </i>
+      </strong>
+
+    <p>After Breakfast Excursion To The Lake City Udaipur, Visit Tripura Sundari
+	Temple, Popularly Known As Matabari, Neermahal, Bhuvaneswari Temple, Gunabati
+	Group Of Temples.
+	Enroute Visit Shipahijala Wild Life Sanctuary. Overnight Stay At Agartala.
+    Hotspots : Tripura Sundari Temple, Neermahal	</p>
+    <p> Meals & Drinks : Breakfast, Lunch & Dinner</p>
+	
+	
+	</div>
+	
+	
+	<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbspHotel Sonar Tori</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "hotelsonartori.html">Check hotel photos</a></button>
+    		  <br>
+	  <br>
+	<h3>₹6000</h3>
+	</div>
+    <hr>
+	
+	
+	
+	
+	   <!--------------------          --------------------------->
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="silachardp.jpg" height="350" width="350" align="right">
+      </legend>
+	   
+
+    <p class="lead"> Agartala - Silchar Distance: - 309 Kms</p>
+	
+	<strong><i>
+          <p>Silchar</p>
+        </i>
+      </strong>
+
+    <p>After Breakfast, Proceed To Silchar A Small Town Of The State Assam.
+	Afternoon, Visit Rengmai Naga Village Near The Market. Overnight Stay At
+	Silchar.</p>
+    <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+	
+	</div>
+	
+	
+	<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbspHotel Chachar club by Siara</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "hotelcacharclubbysiara.html">Check hotel photos</a></button>
+    		  <br>
+	  <br>
+	<h3>₹6000</h3>
+	
+	</div>
+    <hr>
+	
+	
+	
+	
+	
+<!--------------------          --------------------------->
+<div class="container">
+      <legend>
+        <p class="day">DAY 4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="aizawal.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+    <p class="lead">Silchar - Aizawl Distance: - 170 Kms</p>
+	
+	<strong><i>
+          <p>Aizwal</p>
+        </i>
+      </strong>
+
+    <p>After Breakfast Drive To Aizawl – The Capital City Of The
+	   State Mizoram. Evening Free At Leisure. Overnight Stay At Aizawl.</p>
+    <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+</div>
+
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Jenny's Guest House and Homestay </h3><button
+        type="button" class="btn btn-outline-primary"><a href = "jennysguesthouse.html">Check hotel photos</a></button>
+    		  <br>
+	  <br>
+	<h3>₹6000</h3>
+	
+	</div>
+    <hr>
+
+
+
+
+
+<!--------------------          --------------------------->
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="aizawal.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+    <p class="lead">Aizawl</p>
+	
+	
+		<strong><i>
+          <p>Aizwal</p>
+        </i>
+      </strong>
+
+    <p>After Breakfast Proceeds To Visit Bara Bazar, Luangmual Handicraft
+	  Centre, Mizoram State Museum And Durtlang Hills. Overnight Stay At Aizawl.</p>
+    <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbspJenny's Guest House and Homestay</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "jennysguesthouse.html">Check hotel photos</a></button>
+		  <br>
+	  <br>
+	<h3>₹6000</h3>   
+   </div>
+    <hr>
+
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="silachardp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+    <p class="lead"> Aizawl - Silchar  Distance: - 170 Kms</p>
+	
+	<strong><i>
+          <p>Silchar</p>
+        </i>
+      </strong>
+
+    <p>After Breakfast Proceed For Silchar To Break The Journey Towards 
+	Shillong. Overnight Stay Silchar.</p>
+    <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Hotel Cachar Club by Siara</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "theloftexecutiveinn".html">Check hotel photos</a></button>
+    
+	  <br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+
+
+
+<!--------------------          --------------------------->
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="shillongdp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+    <p class="lead"> Silchar - Shillong Distance: - 218 Kms</p>
+
+<strong><i>
+          <p>Shillong</p>
+        </i>
+      </strong>
+
+
+    <p>Drive To Shillong. On Way To Shillong Visit The Monoliths Of Nartiang And 
+	 Durga Temple At Jowai. Evening Free For A Walk To Police Bazaar. Overnight Stay
+	 At Shillong.</p>
+     <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+		
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp The Left Executive Inn</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "theloftexecutiveinn".html">Check hotel photos</a></button>
+		  <br>
+	  <br>
+	<h3>₹4000</h3>    
+	</div>
+    <hr>
+
+
+
+<!--------------------          --------------------------->
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 8&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="cherrapunjidp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+
+	
+    <p class="lead">Shillong - Cherrapunjee Distance: - 120 Kms</p>
+	
+	<strong><i>
+          <p>Cherrapunjee</p>
+        </i>
+      </strong>
+	
+	
+	
+    <p>Day excursion to Cherrapunjee, The lovely town is also famous for its limestone caves and orange honey. enroute visit Elephant Falls and Shillong Peak. Also visit the
+	Mawsmai Cave, Nohkalikai Falls, Thankarang Park, ramakrishna School. Overnight stay at Shillong.
+        Hotspots : Elephant Falls, Shillong Peak	</p>
+       <p> Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Aisha Guest House</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "aishaguesthouse".html">Check hotel photos</a></button>
+		  <br>
+	  <br>
+	<h3>₹4000</h3>    
+	</div>
+    <hr>
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 9&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="guwahatidp.jpg" height="350" width="350" align="right">
+      </legend>
+
+	
+    <p class="lead"> Shillong - Guwahati Distance: - 100 Kms</p>
+	
+<strong><i>
+          <p>Guwahati</p>
+        </i>
+      </strong>	
+	
+    </p>After Breakfast Proceed To Guwahati - The Land Of Mother Goddess Kamakhya Situated Bank Of The Mighty River Brahmaputra. Visit Umananda Temple.Overnight Saty At Guwahati.</p>
+        <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+		
+</div>	
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Radisson Blu Hotel Guwahati</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "radissonbluhotel".html">Check hotel photos</a></button>
+		  <br>
+	  <br>
+	<h3>₹4000</h3>
+    </div>
+    <hr>
+
+
+
+
+
+<!--------------------          --------------------------->		
+		
+	<div class="container">
+      <legend>
+        <p class="day">DAY 10&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="guwahatidp.jpg" height="350" width="350" align="right">
+      </legend>
+
+	
+	
+	
+	
+	
+    <p class="lead">Guwahati</p>
+	
+		
+<strong><i>
+          <p>Guwahati</p>
+        </i>
+      </strong>
+	
+	
+   <p> After Breakfast Proceed To Visit Kamakhya Temple One Of The 108 Shakti Pethas In India. Visit The Umananda Temple In The Midst Of The River Brahmaputra.
+   After Noon Explore Sri Shankardeva Kalakshetra-A Cultural Centre, Shilpagram For Exquisite Handicrafts Of The North East Region & Balaji Temple. Overnight Stay At Guwahati.</p>
+        <p>Hotspots : Umananda Temple	
+        <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Radisson Blu Hotel Guwahati</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "radissonbluhotel".html">Check hotel photos</a></button>
+   	  <br>
+	  <br>
+	<h3>₹4000</h3>
+
+   </div>
+    <hr>
+
+
+
+
+<!--------------------          --------------------------->
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 11&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Itanagardp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+
+
+    <p class="lead">Guwahati - Itanagar Distance: - 325 Kms</p>
+	
+
+	
+<strong><i>
+          <p>Itanagar</p>
+        </i>
+      </strong>
+
+
+    <p>After Breakfast Proceed To Itanaga Enroute Visit The Historical Town Of Tezpur And Visit Mahabhairava Mandir, Chitralekha Udyan On Arrival Check In Into Hotel.</p> 
+	<p>Overnight Stay At Itanagar.</p>
+      <p>  Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Cygnett Inn Trendz</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "cygnettinntrendz".html">Check hotel photos</a></button>
+		<br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Itanagardp.jpg" height="350" width="350" align="right">
+      </legend>
+
+	
+    <p class="lead"> Itanagar</p>
+	
+	
+	<strong><i>
+          <p>Itanagar</p>
+        </i>
+      </strong>
+	
+    <p>After Breakfast Proceed To Visit Beautiful Itanagar Including The Famous Buddhist Temple, Ita Fort, State Museum, Craft Centre & Emporium. Overnight Stay At Itanagar.</p>
+     <p>   Hotspots : Ita Fort</p>	
+      <p>  Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+</div>
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Cygnett Inn Trendz</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "cygnettinntrendz".html">Check hotel photos</a></button>
+		<br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 13 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="kazirangadp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+
+
+
+
+	
+    <p class="lead">Itanagar - Kaziranga Distance: - 265 Kms</p>
+	
+	
+	<strong><i>
+          <p>Kaziranga</p>
+        </i>
+      </strong>
+	
+	
+	
+    <p>After Breakfast Proceed To Kaziranga National Park A Tiger Reserve The Park Is Famous For One Horned Rhinoceros Along With The Others Like Buffalo, Asiatic Elephant,
+	Tiger And Sambar. Overnight Stay At Kaziranga.</p>
+      <p>  Meals & Drinks : Breakfast, Lunch & Dinner</p>
+	
+</div>
+
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Shivaji Inn Kaziranga</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "shivajiinnkaziranga".html">Check hotel photos</a></button>
+    	<br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 14 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="kazirangadp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+
+
+
+	
+    <p class="lead">Kaziranga</p>
+	
+	
+	
+	<strong><i>
+          <p>Kaziranga</p>
+        </i>
+      </strong>
+	
+	
+    <p>Early Morning Elephant Ride (5.30-6.30 A.M. / 6.30 -7.30 A.M.) In The Central / Western Range Of The Park. Back To Resort For Breakfast And Rest Of The Day Till Lunch Is Free
+	To Explore The Nearby Places. After Lunch Enjoy An Exclusive Jeep Safari In The Western / Central Range (2.30 P.M. Onwards) Of The Park - Ideal For Grassland And Big Game Like
+	One Horned Rhinoceros And Water Buffaloes. Back To The Resort Before It Gets Dark. Overnight Stay At Kaziranga.</p>
+      <p>  Themes : Jeep Safari</p>	
+        <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Shivaji Inn Kaziranga</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "shivajiinnkaziranga".html">Check hotel photos</a></button>
+    	<br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="kohimadp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+
+
+
+	
+    <p class="lead">Kazirnga - Kohima Distance: - 206 Kms.</p>
+	
+	
+	
+	<strong><i>
+          <p>Kohima</p>
+        </i>
+      </strong>
+	
+
+    <p>After Breakfast Proceed To Kohima The State Capital Of Nagaland A Beautiful Town Wide Panorama Views & Is The One Of The Most Populous Tribal Village In Asia. Overnight Stay
+	<p>At Kohima.</p>
+       <p> Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+</div>
+
+
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Hotel Ariel</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "hotelariel".html">Check hotel photos</a></button>
+    		  <br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 16 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="imphaldp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+
+
+
+    <p class="lead">Kohima - Imphal Distance: - 138 Kms.</p>
+	
+	
+	<strong><i>
+          <p>Imphal</p>
+        </i>
+      </strong>
+	
+	
+    <p>After Breakfast Visit World War II Cemetery At Middle Of The Town And The Kisama Village & Proceed To Imphal Visit Relics Of An Old, Historical Palace, Well-Planned Temples
+	And Ceremonial Houses In All Their Splendor Amidst The Tall Pine And Jackfruit Trees, Speak Of Imphals Ancient Past. & The War Memorial. Overnight Stay At Kohima.</p>
+        <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Magen</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "magen".html">Check hotel photos</a></button>
+    		  <br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------          --------------------------->
+
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 17 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="imphaldp.jpg" height="350" width="350" align="right">
+      </legend>
+
+
+
+
+
+
+	
+    <p class="lead">Imphal</p>
+	
+	
+		<strong><i>
+          <p>Imphal</p>
+        </i>
+      </strong>
+	
+	
+
+    <p>After Breakfast Visit Govindajee Mandir, Loktak Lake And Keibul Lamjao National Park Is Famous For Floating Park In The World And For The Rare Deer Species Named Sangai
+	(Dancing Deer) Then Visit Ina Museum & The War Memorial. Afternoon Visit, Imma Market. Overnight Stay At Imphal.</p>
+       <p> Hotspots : Keibul Lamjao National Park</p>	
+        <p>Meals & Drinks : Breakfast, Lunch & Dinner</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+      
+      <br><br>
+    </div>
+
+    <div class="container">
+
+      <h3><img src="https://img.icons8.com/ios/50/000000/5-star-hotel--v2.png" />&nbsp&nbsp Magen</h3><button
+        type="button" class="btn btn-outline-primary"><a href = "magen".html">Check hotel photos</a></button>
+    		  <br>
+	  <br>
+	<h3>₹4000</h3>
+	</div>
+    <hr>
+
+
+
+
+
+<!--------------------          --------------------------->
+
+<div class="container">
+      <legend>
+        <p class="day">DAY 18</p>
+      </legend>
+
+
+	
+	
+    <p class="lead">Imphal</p>
+	
+	
+	<strong><i>
+          <p>Departure</p>
+        </i>
+      </strong>
+	
+	
+	
+	
+   <p>After Breakfast Check Out From The Hotel And Drive To Imphal Airpot To Board The Flight. Hence the Journey ends.</p>
+     <p>   Meals & Drinks : Breakfast</p>
+</div>
+
+</div>
+<br>
+<br>
+<br>
+<hr>
+
+<h2>INCLUSIONS AND EXCLUSIONS</h2>
+
+<div class = "row">
+<div class = "column">
+<p>Inclusions</p>
+<ol>
+<li>7 sisters travel</li>
+<li>AC Accomodation at every hotel</li>
+<li>Food Charges during entire tour</li>
+<li>Travel Insurance for every member/participant</li>
+</ol>
+</div>
+
+<div class = "column">
+<p>Exclusions</p>
+<ol>
+<li>Charges to and from Agartala</li>
+<li>Personal Expenditure of any type</li>
+<li>Medical Expenditure if any/if incurred.</li>
+<li>Goods and services Tax as applicable</li>
+</ol>
+</div>
+
+</div>
+
+</body>
+</html>
