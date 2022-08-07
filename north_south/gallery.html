@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+		
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script language="javascript" src="calendar.js"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+	<!------------------------------------------------- navbar starts -------------------------------------------------------->
+	
+	
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top pt-3 pb-3">
+	  <a class="navbar-brand" href="main.html"><img src="looo.jpeg"  width="176" height="50"><b></b></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  
+	  
+<ul class="menus cf">
+	
+	<li>
+		<a href="">Select Trip</a>
+			<ul class="submenus">
+				<li><a href="customize.html">Customize</a></li>
+				<li><a href="package.html">Package</a></li>
+			
+			</ul>			
+	</li>
+  
+	
+		
+
+	
+	
+	<li>
+		<a href="tel:9423040415">  Call Us</a>	
+	</li>
+	<li>
+		<a href="register.html"><img src = "ava.png" width="19" height="19"></a>
+	</li>
+	
+</ul>
+
+</nav>
+
+<style>
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menus,
+.submenus {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main level */
+.menus {			
+  margin: 15px auto;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menus > li {
+  background: #34495e;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menus a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}		
+
+.menus li:hover {
+  background: #e74c3c;
+}		
+
+.menus > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenus {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenus li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenus > li > a {
+  padding: 1em 2em;			
+}
+
+.submenus > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenus > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenus > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenus > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenus > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenus > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenus > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenus,
+.submenus li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenus li {
+  transition: .2s ease transform;
+}
+
+.menus > li:hover .submenus,
+.menus > li:hover .submenus li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menus > li:hover .submenus li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menus > li:hover .submenus li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+
+</style>	
+	
+<body>
+<br>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+			<br><br><br>
+                <h2 style="text-align:center; margin: 1em 0 0.5em 0; font-weight: normal;position: center;text-shadow: 0 -1px rgba(0,0,0,0.6);font-size: 28px;line-height: 40px;background: #355681;ground: rgba(53,86,129, 0.8);border: 1px solid #fff;padding: 5px 15px;color: white;border-radius: 0 10px 0 10px;box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);font-family: 'Muli', sans-serif;">Decode Travels Gallery</b></h2>
+                <p style="text-align:center; margin: 1em 0 0.5em 0;font-weight: 600;font-family: 'Titillium Web', sans-serif;position: relative;text-shadow: 0 -1px 1px rgba(0,0,0,0.4);font-size: 16px;line-height: 20px;color: #355681;text-transform: uppercase;"> Checkout the amazing photos by our photographers. </p><br>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/butterfly.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/butterfly.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/deer.jpg" data-lightbox="photos" ><img class="img-fluid" src="Gallery/deer.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/eagle.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/eagle.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/tree.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/tree.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/lion.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/lion.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/tiger.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/tiger.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/peacock.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/peacock.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/cat.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/cat.jpg"></a></div><br><br>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/rose.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/rose.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/star.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/star.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/train.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/train.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/dog.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/dog.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/trek.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/trek.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/beach.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/beach.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/mountain.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/mountain.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/cycle.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/cycle.jpg"></a></div>	
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/taj.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/taj.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/fox.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/fox.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/india_gate.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/india_gate.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="Gallery/macau.jpg" data-lightbox="photos"><img class="img-fluid" src="Gallery/macau.jpg"></a></div>
+            </div>
+        </div>
+    </div>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+		
+</body>
+<br>
+
+<br><br><br><br><br><br>
+  <section>
+ 
+    
+    <footer class="footer-20192">
+      <div class="site-section">
+        <div class="container">
+
+          <div class="cta d-block d-md-flex align-items-center px-5">
+            <div>
+              <h2 class="mb-0">Ready for a next trip?</h2>
+              <h3 class="text-dark">Let's gooooo!</h3>
+            </div>
+            <div class="ml-auto">
+              <a href="tel:9423040415" class="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-sm">
+              <a href="#" class="footer-logo">Decode Travels</a>
+              <p class="copyright">
+                <small>&copy; 2022</small>
+              </p>
+            </div>
+            <div class="col-sm">
+              <h3>Customers</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#reviews">Opinions</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Company</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#about-section">About us</a></li>
+                <li><a href="#cust">Packages</a></li>
+                <li><a href="#cust">Customize</a></li>
+                <li><a href="tel:9423040415">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Further Information</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Follow us</h3>
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="#"><span class="fa fa-reddit"></span></a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </section>
+
+
+<style>
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  height: 70vh; }
+
+.footer-20192 {
+  position: relative;
+  color: #fff;
+  padding: 7rem 0;
+  background-color: #141d2a; }
+  .footer-20192 .container {
+    position: relative; }
+  .footer-20192 h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.5; }
+  .footer-20192 .links li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    display: block; }
+    .footer-20192 .links li a {
+      color: #666873; }
+      .footer-20192 .links li a:hover {
+        color: #fff; }
+  .footer-20192 .social li {
+    display: inline-block;
+    position: relative; }
+    .footer-20192 .social li a {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      background-color: #8186d5;
+      color: #fff; }
+      .footer-20192 .social li a > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+  .footer-20192 .footer-logo {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem; }
+  .footer-20192 .copyright {
+    color: #666873; }
+  .footer-20192 .cta {
+    -webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+    box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+    padding: 20px;
+    background-color: #8186d5;
+    top: -150px;
+    position: relative; }
+    .footer-20192 .cta h2, .footer-20192 .cta h3 {
+      line-height: 1.5; }
+    .footer-20192 .cta h3 {
+      font-size: 20px; }
+
+
+</style>
+	
+	</html>
